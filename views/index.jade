@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  h1='hello world!'
+  form(name='name', method='post')
+    div.input
+      label(for='firstName')
+      input(type='text',name='first-name', id='firstName')
+      input(type='submit')
